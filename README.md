@@ -11,5 +11,3 @@ Each time you visit the site, you'll be presented with unique and stunning anima
 
 This project was a great way for me to combine react and three.js. 
 Looking forward to create more interesting projects similar to this!
-
-# Nature-themed-landing-page-Frontend

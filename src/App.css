@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.facts__container {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  top: 45%;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: calc(100vw / 2);
+  gap: 30px;
+}
+
+.facts__title {
+  text-align: center;
+  color: white;
+  font-size: 1.9rem;
+  z-index: 99;
+
+  text-shadow:
+		-1px -1px 0 #8e8e8e,
+		1px -1px 0 #8e8e8e,
+		-1px 1px 0 #8e8e8e,
+		1px 1px 0 #8e8e8e,
+}
+
+.facts__button {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 1rem;
+  padding-block: 5px;
+  padding-inline: 25px;
+  box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.2);
+  border: none;
+  z-index: 99;
+  cursor:pointer;
+}
+
+.facts__button:hover {
+  background-color: rgb(46, 46, 46);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.saved__container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  bottom: 0;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.saved__itemcontainer {
+  display: flex;
+  flex-direction: column;
+  padding-block: 20px;
+  gap: 10px;
+
+  outline: 0.3px solid black;
+  border-radius: 5px;
+  padding-inline: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  opacity: 0.8;
+}
+
+.saved__item__data {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.btn__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saved__item__deletebtn {
+  display: flex;
+  justify-content: flex-end;
+  right:0;
+  background-color: transparent;
+  font-weight:bolder;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor:pointer;
+}
+
+.refresh__container {
+  position: absolute;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  gap: 10px;
+}
+
+.saved__item__favbtn {
+  border: 0.1px solid rgb(146, 146, 146);
+  padding-block: 5px;
+  padding-inline: 10px;
+  border-radius: 5px;
+  cursor:pointer;
+}
+
+.saved__title {
+  font-size: 1.4em;
+  padding-bottom: 10px;
 }

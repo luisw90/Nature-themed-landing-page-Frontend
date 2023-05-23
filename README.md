@@ -1,6 +1,8 @@
 # Nature-themed-landing-page-Frontend
 
-![sand_theme](https://user-images.githubusercontent.com/116962905/226166258-e7fce22e-41ae-4274-a0e7-1d1d1f516ff0.jpg)
+
+https://github.com/luisw90/Nature-themed-landing-page-Frontend/assets/116962905/cac5fedf-a4a7-4cde-88b2-92b505126dd0
+
 
 ![ocean_theme](https://user-images.githubusercontent.com/116962905/226166260-9ecb38a8-9458-4796-9c4f-756379eb7162.jpg)
 
